@@ -1,0 +1,64 @@
+.right-settings {
+  grid-column-start: 12;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  justify-self: end;
+}
+
+.right-settings .setting-comp {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  transition: all .5s ease-in-out;
+}
+
+.right-settings .setting-comp:hover {
+  box-shadow: var(--current-attended-color) 0px 3px 8px;
+}
+
+.right-settings .setting-comp ul {
+  list-style: none;
+  transition: all 1s ease-in-out;
+  li {
+    display: none;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--current-attended-color);
+  }
+
+  li:hover {
+    border: 1px solid var(--current-color);
+    transition: all .3s ease-in-out;
+  }
+
+  .choosed {
+    display: block;
+  }
+}
+
+.right-settings #color-list-btn:hover {
+    height: inherit;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all .5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0;
+
+  li {
+    display: block;
+  }
+}

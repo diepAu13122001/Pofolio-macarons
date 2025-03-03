@@ -1,14 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diep Au's</title>
 
-    <link rel="stylesheet" href="./css/abc.scss">
-</head>
-<body>
-    abc
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/slidebar.css" />
+    <link rel="stylesheet" href="./css/right-settings.css" />
+  </head>
+  <body class="light">
+    <aside class="full-intro left">
+      <div class="nav-logo margin">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/af/Zuganov-sign.png"
+          alt="logo"
+        />
+        <div class="p">
+          Hi, my full name is <span class="h3">Au Ngoc Diep</span>, a
+          <span class="h3">Web Developer</span> passionate about building clean,
+          efficient, and user-friendly websites.
+        </div>
+      </div>
+      <ul class="nav-links margin">
+        <li class="h3 active"><a href="#about">About</a></li>
+        <li class="h3"><a href="#skils">Skils</a></li>
+        <li class="h3"><a href="#projects">Projects</a></li>
+        <li class="h3"><a href="#resume">Resume</a></li>
+        <li class="h3"><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-social margin">
+        <hr class="line line-l" />
+        <div class="icons">
+          <span class="comp-margin"><i class="fa-brands fa-github"></i></span>
+          <span class="comp-margin"><i class="fa-brands fa-facebook"></i></span>
+          <span class="comp-margin"><i class="fa-solid fa-envelope"></i></span>
+          <span class="comp-margin"><i class="fa-solid fa-phone"></i></span>
+        </div>
+      </div>
+    </aside>
+
+    <main></main>
+
+    <aside class="right-settings">
+      <div class="setting-comp" id="mode-btn">
+        <i id="light" class="fa-solid fa-sun"></i>
+        <i id="dark" class="fa-solid fa-moon"></i>
+      </div>
+      <div class="setting-comp" id="color-list-btn">
+        <ul>
+          <li data-color="purple" class="choosed comp-margin"></li>
+          <li data-color="pink" class="comp-margin"></li>
+          <li data-color="orange" class="comp-margin"></li>
+          <li data-color="green" class="comp-margin"></li>
+        </ul>
+      </div>
+    </aside>
+
+    <script src="./js/slidebar.js"></script>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>

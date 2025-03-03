@@ -1,0 +1,124 @@
+:root {
+  --light-background: #ffefc8;
+  --dark-background: #09122c;
+  --light-color: #09122c;
+  --dark-color: #ffefc8;
+  --disable: #76787d;
+  --error: #e50046;
+  --purple: #b2a5ff;
+  --pink: #e0aed0;
+  --orange: #ff9d23;
+  --green: #b8d576;
+  --phone-heading1: 32px;
+  --phone-heading2: 28px;
+  --phone-heading3: 22px;
+  --phone-paragraph: 16px;
+  --heading1: 36px;
+  --heading2: 30px;
+  --heading3: 25px;
+  --paragraph: 18px;
+  --radius-m: 10px;
+  --radius-l: 20px;
+  --current-attended-color: var(--purple);
+  --current-mode: var(--light-background);
+  --current-color: var(--light-color);
+}
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+}
+body {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+}
+
+.dark {
+  background-color: var(--dark-background);
+  --current-mode: var(--dark-background);
+  color: var(--dark-color);
+  --current-color: var(--dark-color);
+  #light {
+    display: block;
+  }
+  #dark {
+    display: none;
+  }
+}
+
+.light {
+  background-color: var(--light-background);
+  --current-mode: var(--light-background);
+  color: var(--light-color);
+  --current-color: var(--light-color);
+  #dark {
+    display: block;
+  }
+  #light {
+    display: none;
+  }
+}
+
+.h1 {
+  font-weight: bolder;
+  font-size: var(--heading1);
+  text-transform: capitalize;
+}
+
+.h2 {
+  font-weight: bold;
+  font-size: var(--heading2);
+  text-transform: capitalize;
+}
+
+.h3 {
+  font-weight: bolder;
+  font-size: var(--heading3);
+  text-transform: capitalize;
+}
+
+.p {
+  font-weight: normal;
+  font-size: var(--paragraph);
+}
+
+i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.margin,
+.padding {
+  margin: 20px 10px;
+}
+
+.comp-margin {
+  margin: 8px;
+}
+
+.line {
+  border-style: solid;
+  border-color: var(--current-color);
+  margin-bottom: 15px;
+}
+
+.line-l {
+  width: 200px;
+  border-width: 1px;
+}
+
+.line-m {
+  width: 100px;
+  border-width: 2px;
+}
+
+.line-s {
+  width: 50px;
+  border-width: 1px;
+}

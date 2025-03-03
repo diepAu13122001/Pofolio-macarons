@@ -1,0 +1,110 @@
+.full-intro {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--current-attended-color);
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 1s ease-out;
+  cursor: grab;
+}
+
+.full-intro:active {
+  cursor: grabbing;
+}
+
+.full-intro:hover {
+  width: 90%;
+  transition: all 1s ease-in;
+}
+
+.full-intro .nav-logo {
+  img {
+    width: 200px;
+    height: 100px;
+  }
+  div {
+    max-width: 550px;
+  }
+}
+
+.full-intro .nav-links {
+  list-style: none;
+  width: 200px;
+  li {
+    display: block;
+  }
+  li > a {
+    text-decoration: none;
+    color: var(--disable);
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s ease;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      left: 0px;
+      bottom: 10px;
+      transition: all 0.5s ease-out;
+      background-color: var(--current-color);
+    }
+  }
+
+  li:hover {
+    a {
+      color: var(--current-color);
+      padding-left: 50px;
+      transition: all 0.3s ease-in-out;
+      &::before {
+        width: 40px;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  .active a {
+    color: var(--current-color);
+    padding-left: 50px;
+    &::before {
+      width: 40px;
+    }
+  }
+}
+
+.left {
+  width: 300px;
+  text-align: left;
+  transition: all 1s ease-in;
+  &:hover {
+    width: 300px;
+  }
+  .p {
+    display: none;
+  }
+
+  .nav-logo {
+    position: absolute;
+    top: 15px;
+    img {
+      width: 150px;
+      height: 75px;
+    }
+  }
+
+  .nav-social {
+    position: absolute;
+    bottom: 15px;
+    .line-l {
+      width: 300px;
+    }
+    .icons {
+      width: 200px;
+    }
+  }
+}
